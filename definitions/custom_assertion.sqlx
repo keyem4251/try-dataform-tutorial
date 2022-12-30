@@ -1,0 +1,9 @@
+config { type: "assertion" }
+
+SELECT
+  *
+FROM
+  ${ref("quickstart-source")}
+WHERE
+  fruit is null
+  or count is null

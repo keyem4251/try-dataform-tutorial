@@ -1,0 +1,3 @@
+config { type: "incremental" }
+
+SELECT * FROM ${ref("quickstart-source")}

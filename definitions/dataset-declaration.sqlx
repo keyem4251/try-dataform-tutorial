@@ -1,0 +1,10 @@
+-- declare external data source
+-- database: data source project id
+-- schema: data source BigQuery dataset
+-- name: datasource table or view name
+config {
+    type: "declaration",
+    database: "bigquery-public-data",
+    schema: "samples",
+    name: "shakespeare",
+}
