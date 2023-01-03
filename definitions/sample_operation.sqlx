@@ -1,0 +1,5 @@
+config { type: "operations" }
+
+DELETE FROM quickstart-source WHERE count = 2;
+DELETE FROM quickstart-source WHERE count = 4;
+CREATE OR REPLACE VIEW operation-test AS (SELECT 1 AS TEST)
