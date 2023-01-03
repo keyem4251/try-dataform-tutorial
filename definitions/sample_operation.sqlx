@@ -10,3 +10,9 @@ CREATE OR REPLACE VIEW operation-test AS (SELECT 1 AS TEST);
 
 -- selfを使用するとファイル名がテーブル名になる
 -- CREATE OR REPLACE TABLE ${self()} AS (CUSTOM_SQL_QUERY)
+
+-- 空のテーブルを作成
+-- CREATE TABLE ${self()} (
+--     x INT64,
+--     y STRING,
+-- )
