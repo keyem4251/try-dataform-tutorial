@@ -1,0 +1,18 @@
+-- hasOutput: 他のスクリプトでoperationで作成したtable, viewを参照する
+config { 
+    type: "operations",
+    hasOutput: true,
+}
+
+DELETE FROM quickstart-source WHERE count = 2;
+DELETE FROM quickstart-source WHERE count = 4;
+CREATE OR REPLACE VIEW operation-test AS (SELECT 1 AS TEST);
+
+-- selfを使用するとファイル名がテーブル名になる
+-- CREATE OR REPLACE TABLE ${self()} AS (CUSTOM_SQL_QUERY)
+
+-- 空のテーブルを作成
+-- CREATE TABLE ${self()} (
+--     x INT64,
+--     y STRING,
+-- )
