@@ -1,0 +1,39 @@
+-- nonNull assertions
+-- config {
+--     type: "table",
+--     assertions: {
+--         nonNull: ["user_id", "custom_id", "email"]
+--     }
+-- }
+-- SELECT ...
+
+-- rowConditions
+-- custom logic defined
+-- config {
+--     type: "incremental",
+--     assertions: {
+--         rowConditions: [
+--             "signup_date is null or signup_date > '2022-08-01'",
+--             "email like '%@%.%'"
+--         ]
+--     }
+-- }
+-- SELECT ...
+
+-- uniqueKey
+-- config {
+--     type: "view",
+--     assertions: {
+--         uniqueKey: ["user_id"]
+--     }
+-- }
+-- SELECT ...
+
+-- uniqueKeys
+-- config {
+--     type: "table",
+--     assertions: {
+--         uniqueKeys: ["user_id", "customer_id"]
+--     }
+-- }
+-- SELECT ...

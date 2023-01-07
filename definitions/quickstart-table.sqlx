@@ -1,5 +1,9 @@
 config {
-    type: "table"
+    type: "table",
+    dependencies: [
+        "custom_assertion",
+        "dataform_quickstart-source_assertions_rowConditions"
+    ]
 }
 
 SELECT
