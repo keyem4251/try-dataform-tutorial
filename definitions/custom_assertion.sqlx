@@ -1,9 +1,13 @@
+-- custom assertions query must return zero rows
 config { type: "assertion" }
 
-SELECT
-  *
+-- validate quickstart-source a, b, c columns is not null
+-- below query hope returns zero rows
+SELECT 
+    *
 FROM
-  ${ref("quickstart-source")}
-WHERE
-  fruit is null
-  or count is null
+    ${ref("quickstart-source")}
+WHERE 
+    a IS NULL 
+    OR b IS NULL 
+    OR c IS NULL
