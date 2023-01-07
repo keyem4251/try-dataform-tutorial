@@ -6,3 +6,16 @@
 --     }
 -- }
 -- SELECT ...
+
+-- rowConditions
+-- custom logic defined
+-- config {
+--     type: "incremental",
+--     assertions: {
+--         rowConditions: [
+--             "signup_date is null or signup_date > '2022-08-01'",
+--             "email like '%@%.%'"
+--         ]
+--     }
+-- }
+-- SELECT ...
