@@ -28,3 +28,12 @@
 --     }
 -- }
 -- SELECT ...
+
+-- uniqueKeys
+-- config {
+--     type: "table",
+--     assertions: {
+--         uniqueKeys: ["user_id", "customer_id"]
+--     }
+-- }
+-- SELECT ...
