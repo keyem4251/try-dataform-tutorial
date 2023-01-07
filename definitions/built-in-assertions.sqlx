@@ -1,0 +1,8 @@
+-- nonNull assertions
+-- config {
+--     type: "table",
+--     assertions: {
+--         nonNull: ["user_id", "custom_id", "email"]
+--     }
+-- }
+-- SELECT ...
