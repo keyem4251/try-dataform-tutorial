@@ -19,3 +19,12 @@
 --     }
 -- }
 -- SELECT ...
+
+-- uniqueKey
+-- config {
+--     type: "view",
+--     assertions: {
+--         uniqueKey: ["user_id"]
+--     }
+-- }
+-- SELECT ...
