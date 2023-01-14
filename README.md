@@ -9,3 +9,4 @@ try gcp dataform [quickstart](https://cloud.google.com/dataform/docs/quickstart-
 * [create sql workflow](https://cloud.google.com/dataform/docs/sql-workflows)
 * [categorize sqlx tag](https://cloud.google.com/dataform/docs/tags)
 * [validate tables with assertions](https://cloud.google.com/dataform/docs/assertions)
+* [develope with javascript](https://cloud.google.com/dataform/docs/develop-workflows-js)
