@@ -15,3 +15,9 @@ publish("js_publish_example_2").config({
     rowConditions: ["test >= 1"]
   }
 }).query(ctx => "SELECT 1 AS test");
+
+// reference top-level includes
+const {serviceName, serviceId} = service;
+
+// reference nested included
+
