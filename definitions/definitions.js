@@ -20,4 +20,4 @@ publish("js_publish_example_2").config({
 const {serviceName, serviceId} = service;
 
 // reference nested included
-
+const {allServiceName, allServiceId} = require("includes/allServices/service.js");
