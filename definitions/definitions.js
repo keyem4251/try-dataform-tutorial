@@ -21,3 +21,13 @@ const {serviceName, serviceId} = service;
 
 // reference nested included
 const {allServiceName, allServiceId} = require("includes/allServices/service.js");
+
+// use dataform query functions in javascript methods
+publish("ref_example").query(ctx => `SELECT * FROM ${ctx.ref("quickstart-source")}`);
+
+// declare a sql workflow data source with javascript
+declare({
+  database: "bigquery-public-data",
+  schema: "samples",
+  name: "gsod",
+});
