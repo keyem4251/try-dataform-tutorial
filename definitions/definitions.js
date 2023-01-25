@@ -31,3 +31,9 @@ declare({
   schema: "samples",
   name: "gsod",
 });
+
+// define manual dataform assertions with javascript
+assert("assertion_example").query(ctx => "SELECT * FROM quickstart-table WHERE fruit IS NULL");
+
+// define custom SQL operations with javascript
+operate("operation_example").queries("INSERT INTO quicksart-source (fruid, count) VALUES ('grape', 2)")
