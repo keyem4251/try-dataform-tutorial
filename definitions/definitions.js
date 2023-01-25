@@ -31,3 +31,6 @@ declare({
   schema: "samples",
   name: "gsod",
 });
+
+// define manual dataform assertions with javascript
+assert("assertion_example").query(ctx => "SELECT * FROM quickstart-table WHERE fruit IS NULL");
