@@ -1,5 +1,5 @@
 # try-dataform-tutorial
-try gcp dataform [quickstart](https://cloud.google.com/dataform/docs/quickstart-create-workflow)
+try dataform [quickstart](https://cloud.google.com/dataform/docs/quickstart-create-workflow)
 
 * [create-workspace section](https://cloud.google.com/dataform/docs/quickstart-create-workflow#create-workspace)
   * entering initialize workspace is making dataform tutorial directories and files.
