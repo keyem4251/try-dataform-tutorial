@@ -1,0 +1,2 @@
+config { type: "table" }
+SELECT * FROM `${constants.PROJECT_ID}.dataform.quickstart-source`
