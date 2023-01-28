@@ -1,0 +1,10 @@
+config {
+    type: "table",
+    disabled: true,
+}
+
+${functions.renderScript(
+    ref("quickstart-source"),
+    ["fruit", "count"],
+    ["count"],
+)}
