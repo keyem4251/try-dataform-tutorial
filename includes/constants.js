@@ -1,2 +1,3 @@
 const PROJECT_ID = "keyem-dev";
-module.exports = { PROJECT_ID };
+const minCount = 2;
+module.exports = { PROJECT_ID, minCount };

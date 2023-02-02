@@ -1,2 +1,2 @@
 config { type: "table" }
-SELECT * FROM `${constants.PROJECT_ID}.dataform.quickstart-source`
+SELECT * FROM `${constants.PROJECT_ID}.dataform.quickstart-source` WHERE count > ${constants.minCount}
