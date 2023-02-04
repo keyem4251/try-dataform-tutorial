@@ -1,5 +1,5 @@
 ${script_builder.renderScript(
     ref("quickstart-source"),
     ["fruit", "count"],
-    ["fruit"]
+    ["count"]
 )}
