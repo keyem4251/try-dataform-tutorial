@@ -1,0 +1,9 @@
+config {
+    type: "table"
+}
+
+js {
+    var { count } = require("includes/allConstants/constants");
+}
+
+SELECT * FROM ${ref("quickstart-table")} WHERE count > ${count}
