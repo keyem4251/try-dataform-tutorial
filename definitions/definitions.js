@@ -37,3 +37,10 @@ assert("assertion_example").query(ctx => "SELECT * FROM quickstart-table WHERE f
 
 // define custom SQL operations with javascript
 operate("operation_example").queries("INSERT INTO quicksart-source (fruid, count) VALUES ('grape', 2)")
+
+// use package
+const { getDomain } = require("postoffice");
+getDomain();
+
+const postoffice = require("postoffice");
+postoffice.getDomain();
