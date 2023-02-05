@@ -41,3 +41,6 @@ operate("operation_example").queries("INSERT INTO quicksart-source (fruid, count
 // use package
 const { getDomain } = require("postoffice");
 getDomain();
+
+const postoffice = require("postoffice");
+postoffice.getDomain();
