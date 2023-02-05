@@ -5,8 +5,11 @@ config {
 js {
     var { count } = require("includes/allConstants/constants");
     const { getDomain } = require("postoffice");
+    const postoffice = require("postoffice");
 }
 
 SELECT * FROM ${ref("quickstart-table")} WHERE count > ${count}
 
 SELECT ${getDomain("email")} AS test
+
+SELECT ${postoffice.getDomain("email")} AS test
